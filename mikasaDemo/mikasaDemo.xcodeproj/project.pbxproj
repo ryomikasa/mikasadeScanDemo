@@ -18,6 +18,7 @@
 		113D34692738F6EA00587A6C /* mikasaDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D34682738F6EA00587A6C /* mikasaDemoUITestsLaunchTests.m */; };
 		113D34762738F95F00587A6C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 113D34752738F95F00587A6C /* Podfile */; };
 		113D34792738F9ED00587A6C /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D34782738F9ED00587A6C /* ViewController1.m */; };
+		113D347C2738FC4500587A6C /* mikatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D347B2738FC4500587A6C /* mikatest.swift */; };
 		EE8283C01CC30D99F2571985 /* Pods_mikasaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FB5ED95FB2BBBB6AA1E476 /* Pods_mikasaDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		113D34752738F95F00587A6C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		113D34772738F9ED00587A6C /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		113D34782738F9ED00587A6C /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		113D347A2738FC4400587A6C /* mikasaDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mikasaDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		113D347B2738FC4500587A6C /* mikatest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mikatest.swift; sourceTree = "<group>"; };
 		13FB5ED95FB2BBBB6AA1E476 /* Pods_mikasaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mikasaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		311B49283D8E07732C954F6C /* Pods-mikasaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mikasaDemo.debug.xcconfig"; path = "Target Support Files/Pods-mikasaDemo/Pods-mikasaDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E2112682CDFFCA46930F57D7 /* Pods-mikasaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mikasaDemo.release.xcconfig"; path = "Target Support Files/Pods-mikasaDemo/Pods-mikasaDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,12 +122,14 @@
 				113D34472738F6E600587A6C /* ViewController.m */,
 				113D34772738F9ED00587A6C /* ViewController1.h */,
 				113D34782738F9ED00587A6C /* ViewController1.m */,
+				113D347B2738FC4500587A6C /* mikatest.swift */,
 				113D34492738F6E600587A6C /* Main.storyboard */,
 				113D344C2738F6EA00587A6C /* Assets.xcassets */,
 				113D344E2738F6EA00587A6C /* LaunchScreen.storyboard */,
 				113D34512738F6EA00587A6C /* Info.plist */,
 				113D34522738F6EA00587A6C /* main.m */,
 				113D34752738F95F00587A6C /* Podfile */,
+				113D347A2738FC4400587A6C /* mikasaDemo-Bridging-Header.h */,
 			);
 			path = mikasaDemo;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				TargetAttributes = {
 					113D343C2738F6E600587A6C = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					113D34572738F6EA00587A6C = {
 						CreatedOnToolsVersion = 13.0;
@@ -342,6 +348,7 @@
 				113D34482738F6E600587A6C /* ViewController.m in Sources */,
 				113D34422738F6E600587A6C /* AppDelegate.m in Sources */,
 				113D34532738F6EA00587A6C /* main.m in Sources */,
+				113D347C2738FC4500587A6C /* mikatest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,8 +522,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J3UG2V47GT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mikasaDemo/Info.plist;
@@ -534,6 +543,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = come.chinaedu.mikascan.mikasaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "mikasaDemo/mikasaDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -544,8 +556,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J3UG2V47GT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mikasaDemo/Info.plist;
@@ -563,6 +577,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = come.chinaedu.mikascan.mikasaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "mikasaDemo/mikasaDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -570,6 +586,7 @@
 		113D34702738F6EA00587A6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -593,6 +610,7 @@
 		113D34712738F6EA00587A6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -616,6 +634,7 @@
 		113D34732738F6EA00587A6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J3UG2V47GT;
@@ -637,6 +656,7 @@
 		113D34742738F6EA00587A6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J3UG2V47GT;
