@@ -16,6 +16,9 @@
 		113D345D2738F6EA00587A6C /* mikasaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D345C2738F6EA00587A6C /* mikasaDemoTests.m */; };
 		113D34672738F6EA00587A6C /* mikasaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D34662738F6EA00587A6C /* mikasaDemoUITests.m */; };
 		113D34692738F6EA00587A6C /* mikasaDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D34682738F6EA00587A6C /* mikasaDemoUITestsLaunchTests.m */; };
+		113D34762738F95F00587A6C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 113D34752738F95F00587A6C /* Podfile */; };
+		113D34792738F9ED00587A6C /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D34782738F9ED00587A6C /* ViewController1.m */; };
+		EE8283C01CC30D99F2571985 /* Pods_mikasaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FB5ED95FB2BBBB6AA1E476 /* Pods_mikasaDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		113D34622738F6EA00587A6C /* mikasaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mikasaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		113D34662738F6EA00587A6C /* mikasaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mikasaDemoUITests.m; sourceTree = "<group>"; };
 		113D34682738F6EA00587A6C /* mikasaDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mikasaDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		113D34752738F95F00587A6C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		113D34772738F9ED00587A6C /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		113D34782738F9ED00587A6C /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		13FB5ED95FB2BBBB6AA1E476 /* Pods_mikasaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mikasaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		311B49283D8E07732C954F6C /* Pods-mikasaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mikasaDemo.debug.xcconfig"; path = "Target Support Files/Pods-mikasaDemo/Pods-mikasaDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E2112682CDFFCA46930F57D7 /* Pods-mikasaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mikasaDemo.release.xcconfig"; path = "Target Support Files/Pods-mikasaDemo/Pods-mikasaDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8283C01CC30D99F2571985 /* Pods_mikasaDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +95,8 @@
 				113D345B2738F6EA00587A6C /* mikasaDemoTests */,
 				113D34652738F6EA00587A6C /* mikasaDemoUITests */,
 				113D343E2738F6E600587A6C /* Products */,
+				2A7A8AF955E25759F25EE3CD /* Pods */,
+				4AC4940030224425ED2E3D0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,11 +117,14 @@
 				113D34412738F6E600587A6C /* AppDelegate.m */,
 				113D34462738F6E600587A6C /* ViewController.h */,
 				113D34472738F6E600587A6C /* ViewController.m */,
+				113D34772738F9ED00587A6C /* ViewController1.h */,
+				113D34782738F9ED00587A6C /* ViewController1.m */,
 				113D34492738F6E600587A6C /* Main.storyboard */,
 				113D344C2738F6EA00587A6C /* Assets.xcassets */,
 				113D344E2738F6EA00587A6C /* LaunchScreen.storyboard */,
 				113D34512738F6EA00587A6C /* Info.plist */,
 				113D34522738F6EA00587A6C /* main.m */,
+				113D34752738F95F00587A6C /* Podfile */,
 			);
 			path = mikasaDemo;
 			sourceTree = "<group>";
@@ -131,6 +146,23 @@
 			path = mikasaDemoUITests;
 			sourceTree = "<group>";
 		};
+		2A7A8AF955E25759F25EE3CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				311B49283D8E07732C954F6C /* Pods-mikasaDemo.debug.xcconfig */,
+				E2112682CDFFCA46930F57D7 /* Pods-mikasaDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4AC4940030224425ED2E3D0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13FB5ED95FB2BBBB6AA1E476 /* Pods_mikasaDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 113D346C2738F6EA00587A6C /* Build configuration list for PBXNativeTarget "mikasaDemo" */;
 			buildPhases = (
+				DBE122DB7B22944482E21AFC /* [CP] Check Pods Manifest.lock */,
 				113D34392738F6E600587A6C /* Sources */,
 				113D343A2738F6E600587A6C /* Frameworks */,
 				113D343B2738F6E600587A6C /* Resources */,
+				56192B0AB420D12832EFFE29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +270,7 @@
 			files = (
 				113D34502738F6EA00587A6C /* LaunchScreen.storyboard in Resources */,
 				113D344D2738F6EA00587A6C /* Assets.xcassets in Resources */,
+				113D34762738F95F00587A6C /* Podfile in Resources */,
 				113D344B2738F6E600587A6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,11 +291,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56192B0AB420D12832EFFE29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mikasaDemo/Pods-mikasaDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mikasaDemo/Pods-mikasaDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mikasaDemo/Pods-mikasaDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBE122DB7B22944482E21AFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mikasaDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		113D34392738F6E600587A6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113D34792738F9ED00587A6C /* ViewController1.m in Sources */,
 				113D34482738F6E600587A6C /* ViewController.m in Sources */,
 				113D34422738F6E600587A6C /* AppDelegate.m in Sources */,
 				113D34532738F6EA00587A6C /* main.m in Sources */,
@@ -433,6 +511,7 @@
 		};
 		113D346D2738F6EA00587A6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 311B49283D8E07732C954F6C /* Pods-mikasaDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -461,6 +540,7 @@
 		};
 		113D346E2738F6EA00587A6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2112682CDFFCA46930F57D7 /* Pods-mikasaDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
