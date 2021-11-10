@@ -30,6 +30,9 @@
 
 -(void)awakeScaner{
     NSLog(@"唤醒scaner按钮押下");
+//    ImageScannerController *scannerViewController = [[ImageScannerController alloc] init];
+//    [self presentViewController:scannerViewController animated:YES completion:nil];
+    
 }
 
 /*
